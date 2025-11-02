@@ -1,0 +1,104 @@
+{
+  "orders": [
+    {
+      "order_id": "O-1001",
+      "order_date": "2025-01-05",
+      "customer_id": "C-001",
+      "items": [
+        {"product_id": "P-1", "unit_price": 20.0, "unit_cost": 8.0, "quantity": 2},
+        {"product_id": "P-2", "unit_price": 35.0, "unit_cost": 24.0, "quantity": 1}
+      ],
+      "returns": []
+    },
+    {
+      "order_id": "O-1002",
+      "order_date": "2025-01-15",
+      "customer_id": "C-002",
+      "items": [
+        {"product_id": "P-2", "unit_price": 34.0, "unit_cost": 24.0, "quantity": 2},
+        {"product_id": "P-3", "unit_price": 10.0, "unit_cost": 3.0, "quantity": 5}
+      ],
+      "returns": [{"product_id": "P-3", "quantity": 1}]
+    },
+    {
+      "order_id": "O-1003",
+      "order_date": "2025-01-22",
+      "customer_id": "C-003",
+      "items": [
+        {"product_id": "P-4", "unit_price": 50.0, "unit_cost": 35.0, "quantity": 1},
+        {"product_id": "P-1", "unit_price": 19.5, "unit_cost": 8.0, "quantity": 1}
+      ],
+      "returns": [{"product_id": "P-1", "quantity": 1}]
+    },
+    {
+      "order_id": "O-1004",
+      "order_date": "2025-02-02",
+      "customer_id": "C-001",
+      "items": [
+        {"product_id": "P-5", "unit_price": 82.0, "unit_cost": 60.0, "quantity": 1},
+        {"product_id": "P-3", "unit_price": 10.0, "unit_cost": 3.0, "quantity": 2}
+      ],
+      "returns": []
+    },
+    {
+      "order_id": "O-1005",
+      "order_date": "2025-02-10",
+      "customer_id": "C-004",
+      "items": [
+        {"product_id": "P-2", "unit_price": 36.0, "unit_cost": 24.0, "quantity": 1},
+        {"product_id": "P-6", "unit_price": 12.0, "unit_cost": 5.0, "quantity": 10}
+      ],
+      "returns": [{"product_id": "P-6", "quantity": 2}]
+    },
+    {
+      "order_id": "O-1006",
+      "order_date": "2025-02-18",
+      "customer_id": "C-002",
+      "items": [
+        {"product_id": "P-1", "unit_price": 20.0, "unit_cost": 8.0, "quantity": 3},
+        {"product_id": "P-4", "unit_price": 49.0, "unit_cost": 35.0, "quantity": 1}
+      ],
+      "returns": [
+        {"product_id": "P-4", "quantity": 1},
+        {"product_id": "P-1", "quantity": 1}
+      ]
+    },
+    {
+      "order_id": "O-1007",
+      "order_date": "2025-02-25",
+      "customer_id": "C-003",
+      "items": [
+        {"product_id": "P-3", "unit_price": 9.5, "unit_cost": 3.0, "quantity": 3},
+        {"product_id": "P-5", "unit_price": 81.0, "unit_cost": 60.0, "quantity": 1}
+      ],
+      "returns": [{"product_id": "P-3", "quantity": 1}]
+    },
+    {
+      "order_id": "O-1008",
+      "order_date": "2025-02-28",
+      "customer_id": "C-005",
+      "items": [
+        {"product_id": "P-1", "unit_price": 15.0, "unit_cost": 8.0, "quantity": 1}
+      ],
+      "returns": []
+    },
+    {
+      "order_id": "O-1009",
+      "order_date": "2025-02-28",
+      "customer_id": "C-006",
+      "items": [
+        {"product_id": "P-3", "unit_price": 8.0, "unit_cost": 7.0, "quantity": 1}
+      ],
+      "returns": []
+    },
+    {
+      "order_id": "O-1010",
+      "order_date": "2025-02-28",
+      "customer_id": "C-007",
+      "items": [
+        {"product_id": "P-2", "unit_price": 36.0, "unit_cost": 24.0, "quantity": 1}
+      ],
+      "returns": []
+    }
+  ]
+}
