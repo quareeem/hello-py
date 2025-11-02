@@ -1,0 +1,5 @@
+services:
+  etl:
+    build: .
+    env_file: .env
+    command: python run_etl_eval.py
