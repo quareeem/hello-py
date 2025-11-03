@@ -1,5 +1,19 @@
 services:
+  anthropic:
+    build: .
+    env_file: .env
+    command: python main.py
+
+  gpt:
+    build: .
+    env_file: .env
+    command: python main_openai.py
+
   etl:
     build: .
     env_file: .env
     command: python run_etl_eval.py
+    volumes:
+      - .:/app:ro  # read-only mount of your source
+
+
