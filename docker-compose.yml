@@ -1,19 +1,26 @@
+version: "3.9"
+
+x-app: &app
+  build: .
+  env_file: .env
+  # comment out the next line if you don't want source mounted read-only
+  # (kept only for the ETL service below)
+  # volumes:
+  #   - .:/app:ro
+  init: true
+
 services:
   anthropic:
-    build: .
-    env_file: .env
+    <<: *app
     command: python main.py
 
   gpt:
-    build: .
-    env_file: .env
+    <<: *app
     command: python main_openai.py
 
   etl:
-    build: .
-    env_file: .env
+    <<: *app
     command: python run_etl_eval.py
+    # mount source read-only for quick edits without rebuilds
     volumes:
-      - .:/app:ro  # read-only mount of your source
-
-
+      - .:/app:ro
